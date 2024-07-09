@@ -1,0 +1,109 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+.con{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.cal{   
+z-index: 1;
+width: 260px;
+padding: 50px;
+background-color: rgb(248, 250, 249);
+border-radius: 10%;
+display: grid;
+grid-template-columns: repeat(4,65px);
+box-shadow: inset 0px 0px 5px 5px rgb(178, 185, 187);
+}
+.header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.header p{
+    font-size: 30px;
+    color: rgb(31, 23, 18);
+    padding: 20px;
+    margin-left: 200px;
+}
+#history{
+    position: absolute ;
+    width: auto;
+    background-color: rgb(24, 123, 216);
+    right:340px;
+    padding: 20px;
+}
+li{
+    text-decoration: none;
+    list-style:none;
+    font-size:18px;
+}
+li:last-child{
+    font-size: 25px;
+    color: aliceblue;
+}
+input{
+    margin: 10px;
+    grid-column: span 4;
+    border: none;
+    font-size: 30px;
+    border-radius: 30px;
+    padding: 32px;
+    text-align: end;
+    box-shadow: inset 0px 0px 6px 2px rgb(105, 96, 96);
+}
+h1{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+    padding: 20px;
+    margin:2px;
+    border-radius: 40px;
+    border: none;
+    font-size: 30px;
+    box-shadow: inset 0px 2px 6px 3px rgb(156, 125, 125);
+    text-align: center;
+}
+#symbol{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(38, 24, 160);
+    }
+#active{
+ background-color: rgb(49, 141, 194);   
+}
+
+
+@media screen and (max-width:768px) {
+    .cal{  margin-top:-5px;
+           height:100vh;
+           padding: 15px;
+    }
+    button{
+        padding: 5px;
+        font-size: 18px;
+    }
+#symbol{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(38, 24, 160);
+    }
+    #history{
+        z-index: 1;
+        top:600px;
+        right: 100px;
+    }
+    input{
+        padding:18px;
+        font-size: 25px;
+        margin: 2px;
+    }
+}
